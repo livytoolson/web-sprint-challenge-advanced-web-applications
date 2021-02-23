@@ -70,6 +70,7 @@ const ColorList = ({ colors, updateColors }) => {
           </li>
         ))}
       </ul>
+      <button onClick={() => setEditing(true)}>add color</button>
       {editing && (
         <form onSubmit={saveEdit}>
           <legend>edit color</legend>
